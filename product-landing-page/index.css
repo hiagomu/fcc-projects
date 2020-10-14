@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  font-family: 'Montserrat';
+  padding: 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header #logo {
+  margin-left: 4em;
+  display: flex;
+  align-items: center;
+}
+header nav {
+  margin-right: 4em;
+}
+header #logo img {
+  height: 2em;
+  width: 2em;
+}
+header #logo h1 {
+  color: white;
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  list-style: none;
+  margin-left: 1.2em;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 0.2em;
+}
+header ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+#back-header {
+  background-image: url(https://images.pexels.com/photos/3204420/pexels-photo-3204420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+}
+#fade-back-header {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#fade-back-header h1 {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+}
+#fade-back-header p {
+  border-left: 3px solid white;
+  color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  padding-left: 1em;
+  font-size: 0.9em;
+  width: 16em;
+  top: 30%;
+  left: 10%;
+}
+#fade-back-header a {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  width: 6em;
+  padding: 0.3em 0;
+  text-align: center;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+#fade-back-header a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#services {
+  height: 100vh;
+  padding-top: 3em;
+}
+#services h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+#center-services {
+  display: flex;
+  justify-content: center;
+}
+#services h2 {
+  margin-bottom: 1em;
+  text-align: center;
+  color: black;
+}
+#display-services {
+  display: flex;
+  width: 50em;
+  padding: 0 0 0 1em;
+  border-left: 3px solid black;
+}
+.card {
+  height: 27em;
+  width: 17em;
+  margin-right: 1em;
+  background-color: #e8e8e8;
+  position: relative;
+}
+.card img {
+  display: block;
+  margin: 1em auto 0;
+  height: 2em;
+  width: 2em;
+}
+.card span {
+  display: block;
+  margin: 0 auto 0.5em;
+  height: 1em;
+  width: 3em;
+  border-bottom: 4px solid black;
+} 
+.card p {
+  text-align: center;
+  padding: 0 0.5em;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+.card a {
+  display: block;
+  margin: 0 auto;
+  padding: 0.3em;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  width: 5em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+.card a:hover {
+  background-color: rgba(0, 0, 0, 0.3);  
+}
+.card-back {
+  height: 12em;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.fade-card {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fade-card h3 {
+  color: white;
+}
+#party {
+  background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#ceremony {
+  background-image: url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
+#honeymoon {
+  background-image: url("https://images.pexels.com/photos/3637863/pexels-photo-3637863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+#mid-img {
+  background-image: url("https://images.pexels.com/photos/3292697/pexels-photo-3292697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mid-img p {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border-left: 2px solid white;
+  color: white;
+  padding-left: 1em;
+  font-size: 2.5em;
+}
+
+#plans {
+  height: calc(100vh-3em);
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 3em;
+}
+#plans-content {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 10px 13px -6px rgba(0, 0, 0, 0.08), 0px 20px 31px 3px rgba(0, 0, 0, 0.09), 0px 8px 20px 7px rgba(0, 0, 0, 0.02);
+}
+#plans h1 {
+  color: black;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.plan {
+  padding: 0 0.8em;
+  text-align: center;
+  height: 26em;
+  width: 20em;
+}
+.plan h2 {
+  padding: 0.7em 0;
+  margin-bottom: 1em;
+  background-color: white;
+}
+.plan li {
+  list-style: none;
+  padding: 0 0 0.8em;
+  border-bottom: 1px solid black;
+  margin-bottom: 0.8em;
+  color: black;
+}
+.plan span {
+  display: block;
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.plan a {
+  display: block;
+  margin: 3em auto 0;
+  width: 5em;
+  text-decoration: none;
+  color: black;
+  padding: 0.3em;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+}
+.plan a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#contact {
+  width: 100%;
+  padding-top: 3em;
+}
+#contact-content {
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  padding: 2em 5% 0;
+}
+#contact-content form {
+  margin-left: 1em;
+  text-align: center;
+  width: 20em;
+}
+#contact-content h2 {
+  margin-bottom: 1em;
+}
+#contact-content input {
+  outline: 0;
+  display: block;
+  height: 1.8em;
+  width: 80%;
+  border-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1em;
+}
+#contact-content textarea {
+  resize: none;
+  outline: 0;
+  width: 80%;
+  height: 8em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#contact-content #submit {
+  display: block;
+  margin: 1em auto 0;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: black;
+  width: 5em;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.4em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  cursor: pointer;
+}
+#contact-content #submit:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#contact-content a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 850px) {
+  #services {
+    height: auto;
+  }
+  
+  #display-services {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 1em 0;
+    border: none;
+    border-top: 3px solid black;
+  }
+  
+  .card {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  
+  #contact-content {
+    display: block;
+  }
+  
+  iframe {
+    display: block;
+    margin: 0 auto 1em;
+  }
+  
+  #contact-content {
+    height: auto;
+    padding-bottom: 2em
+  }
+  
+  #contact-content form {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  #plans-content {
+    display: block;
+  }
+  .plan {
+    margin: 0 auto 4em;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  
+  header {
+    justify-content: center;
+  }
+  
+  header a {
+    font-size: 0.9em;
+  }
+  
+  header #logo {
+    margin-left: 1em;
+  }
+  
+  header #logo h1{
+    margin-left: 1em;
+    font-size: 0.9em;
+  }
+  
+  header nav {
+    margin-right: 1em;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+  
+  #contact-content form {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  
+  #fade-back-header p {
+    top: 40%;
+  }
+  
+  #fade-back-header a {
+    top: 90%;
+  }
+}
+@media (max-height: 400px) {
+  #fade-back-header h1 {
+    font-size: 1.5em;
+  }
+  #fade-back-header p {
+    font-size: 0.7em;
+  }
+  #fade-back-header a {
+    font-size: 0.7em;
+    top: 90%;
+    left: 50%;
+  }
+}
+
+

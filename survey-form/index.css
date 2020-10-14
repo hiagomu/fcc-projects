@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Code Pro", cursive;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/474x/4e/b9/7f/4eb97fd007b0293f809aa72f2fea6d8d.jpg");
+  background-color: black;
+}
+
+h1 {
+  margin-top: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+p {
+  color: white;
+  opacity: 0.7;
+  text-align: center;
+}
+
+form {
+  margin: 0 10%;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+#forms-in {
+  padding: 5% 10%;
+}
+
+#user-info-grid {
+  display: grid;
+  grid-template-columns: repeat(20, 5%);
+  grid-template-rows: 1fr 1fr 1fr 2fr;
+}
+
+input {
+  margin-bottom: 0.8em;
+  outline: 0;
+}
+
+#user-info-grid input {
+  border-radius: 8px;
+  padding: 0.2em;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+
+input#name {
+  grid-area: 1/1/2/12;
+}
+
+input#email {
+  grid-area: 1/13/2/21;
+}
+
+input#steam {
+  grid-area: 2/1/3/10;
+}
+
+input#number {
+  grid-area: 2/11/3/15;
+}
+
+input#birth {
+  grid-area: 2/16/3/21;
+  color: gray;
+}
+
+input#tel {
+  grid-area: 3/1/4/8;
+}
+
+input#nick {
+  grid-area: 3/9/4/15;
+}
+
+select {
+  border-radius: 10px;
+  outline: 0;
+  height: 80%;
+  grid-area: 3/16/4/21;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  margin-bottom: 0.8em;
+}
+
+select:invalid {
+  color: gray;
+}
+
+
+textarea {
+  grid-area: 4/1/6/14;
+  border-radius: 10px;
+  outline: 0;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  resize: none;
+  padding: 0.2em 0.4em 0.4em 0.4em;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+#cs-info-h2 {
+  margin-top: 0.9em;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 0.8em;
+  height: 1.3em;
+}
+
+#cs-info-radio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 3em;
+}
+
+label {
+  color: white;
+}
+
+#cs-info-radio-grid label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+
+#cs-info-radio-grid input {
+  margin-right: 0.6em;
+}
+
+#cs-info-check {
+  margin-top: 2em;
+}
+
+#cs-info-check label {
+ display: block; 
+}
+
+#cs-info-check input {
+  margin-right: 0.6em;
+}
+
+button {
+  color: black;
+  display: block;
+  text-align: center;
+  background-color: white;
+  width: 100px;
+  padding: 0.4em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  border: 2px solid white;
+  border-radius: 20px;
+  transition: 100ms;
+  outline: none;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #user-info-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #number {
+    width: 40%;
+  }
+  
+  #cs-info-radio-grid {
+    display: block;
+  }
+  
+  .cs-info-media {
+    margin-bottom: 2em;
+  }
+}
