@@ -1,0 +1,15 @@
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --preto-transparente: rgba(0, 0, 0, 0.8);
+    --color-p-banner: rgba(255, 255, 255, 0.8);
+    --color-fade-banner:  rgba(0, 0, 0, 0.4);
+
+    --color-card: #e8e8e8;
+    
+    --banner-botao-hover: rgba(255, 255, 255, 0.2);
+
+    --borda-botao: #000000;
+    --background-botao: rgba(0, 0, 0, 0.1);
+    --botao-hover: rgba(0, 0, 0, 0.3);
+}

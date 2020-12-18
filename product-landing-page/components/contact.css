@@ -1,0 +1,56 @@
+.contact {
+    width: 100%;
+}
+
+#contact-content {
+background-color: #e8e8e8;
+display: flex;
+justify-content: center;
+height: 60vh;
+padding: 2em 5% 0;
+}
+#contact-content form {
+margin-left: 1em;
+text-align: center;
+width: 20em;
+}
+#contact-content h2 {
+margin-bottom: 1em;
+}
+#contact-content input {
+outline: 0;
+display: block;
+height: 1.8em;
+width: 80%;
+border-style: none;
+border: 1px solid rgba(0, 0, 0, 0.3);
+margin: 0 auto 1em;
+}
+#contact-content textarea {
+resize: none;
+outline: 0;
+width: 80%;
+height: 8em;
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#contact-content #submit {
+display: block;
+margin: 1em auto 0;
+font-size: 0.9em;
+font-weight: bold;
+color: black;
+width: 5em;
+height: auto;
+text-align: center;
+text-decoration: none;
+padding: 0.4em;
+background-color: rgba(0, 0, 0, 0.1);
+border: 2px solid black;
+cursor: pointer;
+}
+#contact-content #submit:hover {
+background-color: rgba(0, 0, 0, 0.3);
+}
+#contact-content a:hover {
+background-color: rgba(0, 0, 0, 0.3);
+}

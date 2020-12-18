@@ -1,0 +1,94 @@
+.services {
+    height: 100vh;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+}
+
+.services__container--cards {
+    display: flex;
+
+    width: 50em;
+    
+    padding: 0 0 0 1em;
+    
+    border-left: 3px solid var(--preto);
+}
+
+.services__cards--card {
+    height: 27em;
+    width: 17em;
+
+    margin-right: 1em;
+    
+    background-color: var(--color-card);
+    
+    position: relative;
+}
+
+.services__card--img {
+    height: 12em;
+
+    background-color: var(--preto);
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+#party {
+    background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+#ceremony {
+    background-image: url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+}
+#honeymoon {
+    background-image: url("https://images.pexels.com/photos/3637863/pexels-photo-3637863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.services__card--fade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: var(--preto-transparente);
+}
+
+.services__card--h3 {
+    color: white;
+    font-weight: bold;
+}
+
+.services__card--icon {
+    display: block;
+
+    height: 2em;
+    width: 2em;
+
+    margin: 1em auto 0;
+}
+
+.services__card--span {
+    display: block;
+
+    height: 1em;
+    width: 3em;
+
+    margin: 0 auto 0.5em;
+    
+    border-bottom: 4px solid var(--preto);
+} 
+
+.services__card--p {
+    text-align: center;
+    font-size: 0.9em;
+
+    padding: 0 0.5em;
+    margin-bottom: 1.5em;
+}
+

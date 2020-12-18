@@ -1,0 +1,42 @@
+.banner {
+    background-image: url(https://images.pexels.com/photos/3204420/pexels-photo-3204420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    width: 100%;
+
+    position: relative;
+}
+
+.banner__fade {
+    width: 100%;
+    height: 100vh;
+
+    background-color: var(--color-fade-banner);
+}
+
+.banner__fade--h1 {
+    color: var(--branco);
+    font-size: 1.8em;
+    font-weight: bold;
+
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.banner__h1--p {
+    width: 16em;
+    padding-left: 1em;
+
+    font-size: 1em;
+    line-height: 1.2em;
+    color: var(--color-p-banner);
+
+    position: absolute;
+    top: 30%;
+    left: 10%;
+
+    border-left: 3px solid var(--branco);
+}

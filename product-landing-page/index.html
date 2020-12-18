@@ -1,153 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Wedreams</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body id="home">
-        <header id="header">
-        <div id="logo">
-            <a href="#home"><img id="header-img" src="https://image.flaticon.com/icons/png/512/3043/3043999.png" alt="logo"></a>
-            <h1>Wedreams</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedreams | Home</title>
+    <link rel="stylesheet" href="base/_reset.css">
+    <link rel="stylesheet" href="base/_variaveis.css">
+    <link rel="stylesheet" href="base/base.css">
+    <link rel="stylesheet" href="components/buttons.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/banner.css">
+    <link rel="stylesheet" href="components/services.css">
+    <link rel="stylesheet" href="components/quote-banner.css">
+    <link rel="stylesheet" href="components/plans.css">
+</head>
+<body>
+    <header>
+        <div class="header__logo">
+            <img src="https://image.flaticon.com/icons/png/512/3043/3043999.png" alt="Logo do Wedreams" class="header__logo--img">
+            <h1 class="header__logo--h1">Wedreams</h1>
         </div>
-        <nav id="nav-bar">
-            <ul>
-            <li><a class="nav-link" href="#services">Services</a></li>
-            <li><a class="nav-link" href="#plans">Plans</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
+        <nav class="header__nav">
+            <ul class="header__nav--ul">
+                <li class="header__ul--li"><a href="#services" class="header__li--a">Services</a></li>
+                <li class="header__ul--li"><a href="#plans" class="header__li--a">Plans</a></li>
+                <li class="header__ul--li"><a href="#" class="header__li--a">Contact</a></li>
             </ul>
         </nav>
-        </header>
-        
-        <div id="back-header">
-        <div id="fade-back-header">
-            <h1>We Create Dreams</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue. Ut suscipit sem a quam efficitur sagittis. Suspendisse sit amet sollicitudin eros. Morbi fermentum lorem ligula, vitae varius augue ultrices eu. Ut quis fermentum sapien. Fusce molestie dolor quis ligula finibus, in ultrices turpis pulvinar.</p>
-            <a href="#services">Start</a>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner__fade">
+                <h1 class="banner__fade--h1">We Create Dreams</h1>
+                <p class="banner__h1--p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt voluptas ratione temporibus sit consectetur natus ipsa nobis at, ipsum quaerat voluptate dolorem officiis harum, vitae magnam. Molestiae, voluptate blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi deserunt voluptas ratione temporibus sit consectetur natus ipsa nobis at.</p>
+            </div>
+            <button class="button button--banner">Start</button>
         </div>
-        </div>
-        
-        <div id="services">
-        <h1>Services</h1>
-        <div id="center-services">
-            <div id="display-services">
-            
-            <div class="card">
-                <div class="card-back" id="party">
-                <div class="fade-card">
-                <h3>Party</h3>
+        <section class="services" id="services">
+            <h2>Services</h2>
+            <div class="services__container">
+                <div class="services__container--cards">
+
+                    <div class="services__cards--card">
+                        <div class="services__card--img" id="party">
+                            <div class="services__card--fade">
+                                <h3 class="services__card--h3">Party</h3>
+                            </div>
+                        </div>
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/11/11155.svg" alt="Imagem de festa" class="services__card--icon">
+                        <span class="services__card--span"></span>
+                        <p class="services__card--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
+                        <button class="button">Details</button>
+                    </div>
+                    <div class="services__cards--card">
+                        <div class="services__card--img" id="ceremony">
+                            <div class="services__card--fade">
+                                <h3 class="services__card--h3">Ceremony</h3>
+                            </div>
+                        </div>
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3096/3096930.svg" alt="Imagem de cerimônia" class="services__card--icon">
+                        <span class="services__card--span"></span>
+                        <p class="services__card--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
+                        <button class="button">Details</button>
+                    </div>
+                    <div class="services__cards--card">
+                        <div class="services__card--img" id="honeymoon">
+                            <div class="services__card--fade">
+                                <h3 class="services__card--h3">Honeymoon</h3>
+                            </div>
+                        </div>
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/3050/3050967.svg" alt="Imagem da lua de mel" class="services__card--icon">
+                        <span class="services__card--span"></span>
+                        <p class="services__card--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
+                        <button class="button">Details</button>
+                    </div>
+                    
                 </div>
+            </div>
+        </section>
+        <div class="quote-banner">
+            <p class="quote-banner__p">Logic will get you from A to B. Imagination will take you everywhere. - Albert Einstein</p>
+        </div>
+        <section class="plans" id="plans">
+            <h2>Plans</h2>
+            <div class="plans__container">
+                <div class="plans__container--plan">
+                    <h3 class="plans__plan--h3">Basic</h3>
+                    <ul>
+                        <li class="plans__plan--li">News</li>
+                        <li class="plans__plan--li">Old</li>
+                        <li class="plans__plan--li">Gold</li>
+                        <li class="plans__plan--li">Gloves</li>
+                    </ul>
+                    <span class="plans__plan--span">$300</span>
+                    <button class="button">Details</button>
                 </div>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/11/11155.svg">
-                <span></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
-                <a href="">Details</a>
-            </div>
-            
-            
-            <div class="card">
-                <div class="card-back" id="ceremony">
-                <div class="fade-card">
-                <h3>Ceremony</h3>
+                <div class="plans__container--plan">
+                    <h3 class="plans__plan--h3">Exclusive</h3>
+                    <ul>
+                        <li class="plans__plan--li">News</li>
+                        <li class="plans__plan--li">Old</li>
+                        <li class="plans__plan--li">Gold</li>
+                        <li class="plans__plan--li">Gloves</li>
+                    </ul>
+                    <span class="plans__plan--span">$500</span>
+                    <button class="button">Details</button>
+                </div>
+                <div class="plans__container--plan">
+                    <h3 class="plans__plan--h3">Premium</h3>
+                    <ul>
+                        <li class="plans__plan--li">News</li>
+                        <li class="plans__plan--li">Old</li>
+                        <li class="plans__plan--li">Gold</li>
+                        <li class="plans__plan--li">Gloves</li>
+                    </ul>
+                    <span class="plans__plan--span">$1000</span>
+                    <button class="button">Details</button>
                 </div>
             </div>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/3096/3096930.svg">
-                <span></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
-                <a href="">Details</a>  
-            </div>
-            
+        </section>
+
+    </main>
     
-            <div class="card">
-                <div class="card-back" id="honeymoon">
-                <div class="fade-card">
-                <h3>Honeymoon</h3>
-                </div>
-            </div>
-                <img src="https://www.flaticon.com/svg/static/icons/svg/3050/3050967.svg">
-                <span></span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et neque velit. Nunc eget massa a diam blandit aliquet. Sed sodales aliquam congue.</p>
-                <a href="">Details</a> 
-            </div>
-    
-            </div>
-        </div>
-        </div>
-        
-        <div id="mid-img">
-        <blockquote>
-            <p>Logic will get you from A to B. Imagination will take you everywhere. - <cite>Albert Einstein</cite></p>
-        </blockquote>
-        </div>
-        
-        <div id="plans">
-        <h1>Plans</h1>
-        <div id="plans-content">
-        
-            <div class="plan">
-            <h2>Basic</h2>
-            <ul>
-                <li>News</li>
-                <li>Olds</li>
-                <li>Golds</li>
-                <li>Gloves</li>
-            </ul>
-            <span>$300</span>
-            <a href="">Buy</a>
-            </div>
-            
-            <div class="plan">
-            <h2>Exclusive</h2>
-            <ul>
-                <li>News</li>
-                <li>Olds</li>
-                <li>Golds</li>
-                <li>Gloves</li>
-            </ul>
-            <span>$500</span>
-            <a href="">Buy</a>
-            </div>
-            
-            <div class="plan">
-            <h2>Premium</h2>
-            <ul>
-                <li>News</li>
-                <li>Olds</li>
-                <li>Golds</li>
-                <li>Gloves</li>
-            </ul>
-            <span>$1000</span>
-            <a href="">Buy</a>
-            </div>
-        
-        </div>
-        </div>
-        
-        <div id="contact">
-        <div id="contact-content">
-            <iframe id="video" width="400" height="300" src="https://www.youtube.com/embed/gaKiJE2C8Tk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <form id="form" action="get">
-    
-            <h2>Contact Us</h2>
-    
-            <label for="email"></label>
-            <input type="email" id="email" name="email" placeholder="Enter your email..." required></input>
-            <label for="name"></label>
-            <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-            
-            <label for="message"></label>
-            <textarea id="message" name="message" placeholder="Enter your message..." required></textarea>
-            
-            <input type="submit" id="submit" value="Send">
-            </form>
-        </div>
-        </div>
-        
-    </body>
-    <footer>
-        <p>Made by Hiago Murilo</p>
-        <p>All reserved</p>
-    </footer>
+</body>
 </html>
