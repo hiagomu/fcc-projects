@@ -1,0 +1,28 @@
+.input {
+    display: block;
+
+    height: 1.8em;
+    width: 80%;
+
+    margin: 0 auto 1em;
+
+    outline: 0;
+
+    border-style: none;
+    border: 1px solid var(--cinza);
+}
+    
+.textarea {
+    width: 80%;
+    height: 8em;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+
+    margin-bottom: 0.8em;
+
+    resize: none;
+    outline: 0;
+
+    border: 1px solid var(--cinza);
+}
